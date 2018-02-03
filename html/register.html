@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+<head>
+	<title>注册页面-张宁</title>
+	<link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+<div class="all">
+<form action="mailto:1213885531@qq.com" method="post" >
+<h1>注册账号</h1>
+<table>
+	<tr>
+		<td align="right">用户名:</td>
+		<td><input name="mail" type="text" id="mail" onBlur="MM_validateForm('mail','','R');return document.MM_returnValue" value="">&nbsp;&nbsp;你可以使用<a href="mailto:1213885531@qq.com">邮箱</a>或使用<a href="#">手机号</a>注册
+		</td>
+	</tr>
+	<tr>
+		<td align="right">密码:</td>
+		<td><input name="pwd" type="password" id="pwd" onChange="MM_validateForm('mail','','R');return document.MM_returnValue"></td>
+	</tr>
+	<tr>
+		<td align="right">确认密码:</td>
+		<td><input name="pwd" type="password" id="pwd" onChange="MM_validateForm('mail','','R','pwd','','R','pwd','','R','qq','','R','telephone','','R','verycode','','R');return document.MM_returnValue"></td>
+	</tr>
+	<tr>
+		<td align="right">QQ号:</td>
+		<td><input name="qq" type="text" id="qq"></td>
+	</tr>
+	<tr>
+		<td align="right">手机号:</td>
+		<td><input name="telephone" type="text" id="telephone"></td>
+	</tr>
+	<tr>
+		<td align="right">性别:</td>
+		<td><input type="radio" name="sex" value="nv">女<input type="radio" name="sex" value="nan" checked="checked">男</td>
+	</tr>
+		<tr>
+		<td align="right">生日:</td>
+		<td><select name="year">
+		<option value="1997">1997</option>
+		<option value="1998">1998</option>
+		<option value="1999">1999</option>
+		</select>年
+		<select name="month">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		</select>月
+		<select name="day">
+		<option value="10">10</option>
+		<option value="20">20</option>
+		<option value="30">30</option>
+		</select>日
+		</td>
+	</tr>
+		<tr>
+		<td align="right">爱好:</td>
+		<td><select name="hooby">
+		<option value="sport">运动</option>
+		<option value="write">写作</option>
+		<option value="sing">唱歌</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">地址:</td>
+		<td><select name="home">
+		<option value="hlj">黑龙江</option>
+		<option value="hn">河南</option>
+		<option value="hb">湖北</option>
+		<option value="sd">山东</option>
+		</select>省
+		<select name="city">
+		<option value="1">哈尔滨</option>
+		<option value="2">郑州</option>
+		<option value="3">武汉</option>
+		<option value="4">青岛</option>
+		</select>市
+		<select name="xian">
+		<option value="10">南岗</option>
+		<option value="20">金水</option>
+		<option value="30">洪山</option>
+		<option value="40">建安</option>
+		</select>区
+		</td>
+	</tr>
+	<tr>
+		<td align="right">个人简介:</td>
+		<td><textarea rows="3" cols="30">请输入...</textarea></td>
+
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td><img src="../img/111.JPG" width="110" height="40"><a href="#"> &nbsp;&nbsp;看不清换一张</a></td>
+	</tr>
+	<tr>
+		<td align="right">验证码：</td>
+		<td><input name="verycode" type="text" id="verycode"></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td><input name="tijiao" type="submit" onClick="MM_validateForm('mail','','R','pwd','','R','pwd','','R','qq','','R','telephone','','R','verycode','','R');return document.MM_returnValue" value="提交"><input type="reset" name="chongzhi" value="重置"></td>
+	</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
