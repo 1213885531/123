@@ -1,0 +1,154 @@
+﻿/* CSS Document */
+*{margin:0;padding:0;}
+body{
+	margin:0;
+	font-weight: bold;
+}
+ul,li{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+.header{
+	height: 55px;
+	background:url(../img/header-bg.png);
+}
+.header .header-top{
+	color: white;		
+	line-height: 45px;
+	text-align: right;				
+}
+.header .header-top a{
+	color:#c0cfcf;
+	text-decoration: none;			
+}
+.header .header-top span{
+	margin: 0 22px; 
+}
+.header .header-top a:hover{	
+	color:#9C0;
+	text-decoration: underline;
+}
+.header.header-nav .nav-logo{
+	display: block;
+	width: 301px;
+	height: 76px;
+	float: left;
+	margin-top: 15px;
+}
+.header-nav{
+	width:1000px;
+	height:auto;
+	margin:auto;
+	
+}
+.nav-bottom table{
+	width: 1000px;
+	height: 43px;
+	background:#36F;
+	margin: 0 auto;
+	line-height: 20px;
+	text-align: center;
+}
+.nav-bottom a{
+	color: white;
+	text-decoration: none;
+}
+.nav-bottom a:hover{
+	color: yellow;
+}
+.nav-bottom span{
+	margin: 0 10px;
+}
+
+
+#search{width:300px;height:36px;display:inline-block; border:1px solid #000;border-right: 0;}
+#submit{width:100px;height:36px;background:#3385ff; border:1px solid #06F;color:#fff;font-size:15px;top: 2px;float:right;border:0;display:inline-block;}
+.tubiao{width:400px;heiht:36px; margin-top:20px;float:right;}
+
+
+.lunbotu{
+	width:1000px;
+	height:200px;
+	background-color:pink;
+	
+	margin:auto;	}
+.timesturn{
+	width:1000px;
+	margin:auto;
+}
+.timesturn a{
+	text-decoration: none;			
+}
+.timesturn a:hover{	
+	text-decoration: none;
+	color:#CF0;
+}
+
+.mainweb .listlittle{
+	color:#222;
+	font-size:15px;
+	font-weight:normal;	
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dedbd7;
+}
+.mainweb .listlittle a{
+	text-decoration: none;			
+}
+.mainweb .listlittle a:hover{	
+	color:red;
+	text-decoration: underline;
+}
+
+/*列表字体*/
+.mainweb .listlittledown{
+	color:#222;
+	font-size: 13px;
+	line-height: 170%;
+	font-weight:normal;	
+
+}
+.mainweb .listlittledown a{
+	text-decoration: none;			
+}
+.mainweb .listlittledown a:hover{	
+	color:#ff6600;
+	text-decoration: none;
+}
+.mainweb .listlittledown a:link {
+    color: #222222;
+}
+
+
+
+.mainweb{
+	width:1000px;
+	margin:auto;
+}
+.mainweb .mainweb1{
+	
+	float:left;
+	width:330px;
+}
+
+.mainweb .mainweb2{
+
+	float:left;
+	width:340px;
+}
+.mainweb .mainweb3{
+
+	float:left;
+	width:330px;
+}
+
+.qrcode_img{float:left;margin-right:5px;}
+.qrcode{float:left;width:130px;height:65px;}
+.qrcode1{margin:0 20px;}
+.text1{color:#272727;font:12px arial}
+.text2{color:#666;font:12px arial}
+.banquan{float:left;width:340px;padding:5px 0px; line-height:28px;}
+.footer{width:640px;height:100px;margin:0 auto;}

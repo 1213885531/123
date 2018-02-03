@@ -1,0 +1,32 @@
+<style type="text/css">
+
+a:hover { text-decoration:underline;
+			color: red;}
+a:link { text-decoration:none;}
+a:visited { text-decoration:none;
+			color: blue;}
+
+body{
+
+		background-image:url(../img/pattern.png);
+		/*background-size:1920px 1080px;*/
+		/*background-repeat:no-repeat;
+		background-position:center;*/
+
+	}
+
+h1{
+	color: red;
+	text-align:center;
+  }
+
+.all{
+
+		margin:100px auto;
+		width: 650px;
+		height: 100%;
+		background-color: #fff;
+	}
+
+
+</style>
